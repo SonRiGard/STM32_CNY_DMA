@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"cny_dma\startup_stm32f103xb.o"
+"cny_dma\main.o"
+"cny_dma\stm32f1xx_it.o"
+"cny_dma\stm32f1xx_hal_msp.o"
+"cny_dma\stm32f1xx_hal_gpio_ex.o"
+"cny_dma\stm32f1xx_hal_adc.o"
+"cny_dma\stm32f1xx_hal_adc_ex.o"
+"cny_dma\stm32f1xx_hal.o"
+"cny_dma\stm32f1xx_hal_rcc.o"
+"cny_dma\stm32f1xx_hal_rcc_ex.o"
+"cny_dma\stm32f1xx_hal_gpio.o"
+"cny_dma\stm32f1xx_hal_dma.o"
+"cny_dma\stm32f1xx_hal_cortex.o"
+"cny_dma\stm32f1xx_hal_pwr.o"
+"cny_dma\stm32f1xx_hal_flash.o"
+"cny_dma\stm32f1xx_hal_flash_ex.o"
+"cny_dma\stm32f1xx_hal_exti.o"
+"cny_dma\stm32f1xx_hal_tim.o"
+"cny_dma\stm32f1xx_hal_tim_ex.o"
+"cny_dma\stm32f1xx_hal_uart.o"
+"cny_dma\system_stm32f1xx.o"
+--strict --scatter "CNY_DMA\CNY_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CNY_DMA.map" -o CNY_DMA\CNY_DMA.axf
